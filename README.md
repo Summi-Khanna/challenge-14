@@ -6,7 +6,7 @@ An algorithmic trading bot that learns and adapts to new data and evolving marke
 
 ## Technologies:
 
-It supports Python 3.7 and has been constructed using jupyter lab notebook named `machine_learning_trading_bot.ipynb`
+It supports Python 3.7 and has been constructed using jupyter lab notebook.
 
 Additionally, the following packages/libraries are used to run the analysis:
 
@@ -44,8 +44,23 @@ To view the analysis, clone the repository using "git clone <link>" and then nav
 
 ## Evaluation Report
 
+- SVM classification report
+![svm](https://github.com/Summi-Khanna/challenge-14/blob/main/Images/SVM%20classification.png)
 
+- Return comparision of SMA vs Actual
+![SVM_2](https://github.com/Summi-Khanna/challenge-14/blob/main/Images/SVM%20vs%20actual%20.png)
 
+`Insights: Increasing the training dataset size did not improve the returns prediction. The precision and recall values for class -1 improved with increase in training set data and presion and recall values for class 1 decreased compared to the original training dataset. Increasing the short window for SMA impacted the precision and recall to increase. It improves these scores till certain limit and then the scores decreases. While increasing the short window when we equally incresase the long window we could achieve optimal maximized results.`
+
+- Logistic Regression classification report
+![LR](https://github.com/Summi-Khanna/challenge-14/blob/main/Images/LR_classification.png)
+
+- Logistic Regression returns vs Actual returns
+![LR_2](https://github.com/Summi-Khanna/challenge-14/blob/main/Images/LR%20vs%20actual.png)
+
+`Insights: The logistic regression model is backtested to evaluate its performance and choosen as new classifier. Using the original training dat we fit the logistic regression model. This new model performed good but not as well as our tuned trading algorithm.`
+
+---
 
 
 ## Contributors
